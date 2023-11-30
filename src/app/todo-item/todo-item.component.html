@@ -1,0 +1,17 @@
+<p>Todo Item</p>
+<ul>
+    <li *ngFor="let item of todo">
+        <label>Title</label>
+        <label>{{ item.title }}</label>
+        <label>Description</label>
+        <label>{{ item.description }}</label>
+        <label>DueDate</label>
+        <label>{{ item.dueDate }}</label>
+        <label>Priority</label>
+        <label>{{ item.priority }}</label>
+        <label>Status</label>
+        <label>{{ item.status }}</label>
+        <label>Notes</label>
+        <label>{{ item.notes }}</label>
+    </li>
+</ul>

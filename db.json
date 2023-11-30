@@ -1,0 +1,40 @@
+{
+  "todo": [
+    {
+      "id": 5,
+      "title": "Make the app looking better",
+      "description": "Add design ",
+      "dueDate": "2023-12-31",
+      "priority": "Medium",
+      "status": "In Progress",
+      "notes": "Use CSS, maybe animations, background images, etc."
+    },
+    {
+      "id": 6,
+      "title": "Get ready for the vacation",
+      "description": "Pack your bag",
+      "dueDate": "2023-12-01",
+      "priority": "High",
+      "status": "Pending",
+      "notes": "check the weather forecast first! "
+    },
+    {
+      "id": 7,
+      "title": "Get ready for the vacation",
+      "description": "Pack your bag",
+      "dueDate": "2023-12-01",
+      "priority": "High",
+      "status": "Pending",
+      "notes": "check the weather forecast first! "
+    },
+    {
+      "id": 8,
+      "title": "Get ready for the vacation",
+      "description": "Pack your bag",
+      "dueDate": "2023-12-01",
+      "priority": "High",
+      "status": "Pending",
+      "notes": "check the weather forecast first! "
+    }
+  ]
+}

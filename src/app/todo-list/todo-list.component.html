@@ -1,0 +1,52 @@
+<h1>My Todos</h1>
+<div *ngIf="todos$ | async as todoList">
+    <ul>
+        <li *ngFor="let todo of todoList">
+            <div class="row">
+                <label>Title:</label>
+                <label> {{ todo.title }}</label>
+            </div>
+
+            <div class="row">
+                <label>Description:</label>
+                <label>{{ todo.description }}</label>
+            </div>
+
+            <div class="row">
+                <label>DueDate:</label>
+                <label>{{ todo.dueDate }}</label>
+            </div>
+
+            <div class="row">
+                <label>Priority:</label>
+                <label>{{ todo.priority }}</label>
+            </div>
+
+            <div class="row">
+                <label>Status:</label>
+                <label>{{ todo.status }}</label>
+            </div>
+
+            <div class="row">
+                <label>Notes:</label>
+                <label>{{ todo.notes }}</label>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="delete" (click)="deleteTodo(todo.id)">Delete todo</button>
+                <button type="button" id="edit" (click)="navigateToEdit(todo.id)">Edit todo</button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="createandfilter">
+    <button type="button" (click)="navigateCreate()">Back to create</button>
+    <button type="button" (click)="filterTodos()">Filter "Pending" todos</button>
+</div>
+
+<div id="search">
+    <label>Search todo:</label>
+    <input type="search" [(ngModel)]="searchTerm" name="searchTerm">
+    <input type="submit" value="Search" (click)="searchTodo()">
+</div>

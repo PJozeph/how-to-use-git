@@ -1,0 +1,28 @@
+p {
+    text-align: center;
+    font-style: italic;
+}
+
+.itemtoedit {
+    border: 5px solid darkgreen;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+.row input {
+    flex: 1;
+}
+
+.row label {
+    flex: 1;
+    font-weight: bold;
+}
+
+button {
+    margin: 5px;
+}
